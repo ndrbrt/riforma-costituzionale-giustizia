@@ -1,0 +1,5 @@
+#!/bin/sh
+if ! make -q docs.md 2>/dev/null; then
+    echo "error: docs.md is stale. Run 'make' and stage the result before committing." >&2
+    exit 1
+fi
