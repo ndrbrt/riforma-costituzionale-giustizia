@@ -18,11 +18,11 @@ Based on these documents, the files `diffs/N.diff` were automatically generated,
 
 ### Knowledge base
 
-Finally, the file `docs.md` was created (automatically generated from `docs.md.tmpl`) which constitutes a knowledge base queryable through LLMs, with instructions and structured data to constrain their behaviour and **reduce** the risk of hallucinations or interpretations not grounded in the official texts.
+Finally, the file `knowledge-base.md` was created (automatically generated from `knowledge-base.md.tmpl`) which constitutes a knowledge base queryable through LLMs, with instructions and structured data to constrain their behaviour and **reduce** the risk of hallucinations or interpretations not grounded in the official texts.
 
 ## Contributing
 
-After cloning the project, install the pre-commit hook to avoid creating commits with an outdated version of `docs.md`:
+After cloning the project, install the pre-commit hook to avoid creating commits with an outdated version of `knowledge-base.md`:
 
 ```sh
 make install-hooks
@@ -31,9 +31,9 @@ make install-hooks
 The only files that should be edited manually are:
 
 - `articles/*` (in case errors are found in the texts)
-- `docs.md.tmpl`
+- `knowledge-base.md.tmpl`
 
-The files `diffs/*` and `docs.md` must not be edited, as they are automatically generated from the above, via the command:
+The files `diffs/*` and `knowledge-base.md` must not be edited, as they are automatically generated from the above, via the command:
 
 ```sh
 make
